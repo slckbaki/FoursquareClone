@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026FD5BBDBCB7A06927EF093 /* Pods_20_Parse_Foursquare_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10410EB74F12F4822D4E853 /* Pods_20_Parse_Foursquare_Clone.framework */; };
 		A1558DB826E3884B00CEE764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DB726E3884B00CEE764 /* AppDelegate.swift */; };
 		A1558DBA26E3884B00CEE764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DB926E3884B00CEE764 /* SceneDelegate.swift */; };
 		A1558DBC26E3884B00CEE764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DBB26E3884B00CEE764 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DFE3C6F64B3836055B2F913 /* Pods-20-Parse Foursquare Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20-Parse Foursquare Clone.debug.xcconfig"; path = "Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		A1558DB426E3884B00CEE764 /* 20-Parse Foursquare Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20-Parse Foursquare Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1558DB726E3884B00CEE764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1558DB926E3884B00CEE764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		A1558DC026E3885200CEE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1558DC326E3885200CEE764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1558DC526E3885200CEE764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C10410EB74F12F4822D4E853 /* Pods_20_Parse_Foursquare_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_20_Parse_Foursquare_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D615EC4C67A74ED31D512626 /* Pods-20-Parse Foursquare Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20-Parse Foursquare Clone.release.xcconfig"; path = "Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026FD5BBDBCB7A06927EF093 /* Pods_20_Parse_Foursquare_Clone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C85C73BA40239F192832ABA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DFE3C6F64B3836055B2F913 /* Pods-20-Parse Foursquare Clone.debug.xcconfig */,
+				D615EC4C67A74ED31D512626 /* Pods-20-Parse Foursquare Clone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1558DAB26E3884B00CEE764 = {
 			isa = PBXGroup;
 			children = (
 				A1558DB626E3884B00CEE764 /* 20-Parse Foursquare Clone */,
 				A1558DB526E3884B00CEE764 /* Products */,
+				7C85C73BA40239F192832ABA /* Pods */,
+				E649370734848BF886F03BB9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "20-Parse Foursquare Clone";
 			sourceTree = "<group>";
 		};
+		E649370734848BF886F03BB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C10410EB74F12F4822D4E853 /* Pods_20_Parse_Foursquare_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1558DC826E3885200CEE764 /* Build configuration list for PBXNativeTarget "20-Parse Foursquare Clone" */;
 			buildPhases = (
+				3DD0C935D3B4DED4A3DA3850 /* [CP] Check Pods Manifest.lock */,
 				A1558DB026E3884B00CEE764 /* Sources */,
 				A1558DB126E3884B00CEE764 /* Frameworks */,
 				A1558DB226E3884B00CEE764 /* Resources */,
+				1E115A2CC08AB2995B19A806 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E115A2CC08AB2995B19A806 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD0C935D3B4DED4A3DA3850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-20-Parse Foursquare Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A1558DB026E3884B00CEE764 /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		A1558DC926E3885200CEE764 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DFE3C6F64B3836055B2F913 /* Pods-20-Parse Foursquare Clone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +372,7 @@
 		};
 		A1558DCA26E3885200CEE764 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D615EC4C67A74ED31D512626 /* Pods-20-Parse Foursquare Clone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
