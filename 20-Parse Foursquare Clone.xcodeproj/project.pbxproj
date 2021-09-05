@@ -3,14 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		026FD5BBDBCB7A06927EF093 /* Pods_20_Parse_Foursquare_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C10410EB74F12F4822D4E853 /* Pods_20_Parse_Foursquare_Clone.framework */; };
+		A1086F2526E4E35100AF8335 /* Places VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1086F2426E4E35100AF8335 /* Places VC.swift */; };
 		A1558DB826E3884B00CEE764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DB726E3884B00CEE764 /* AppDelegate.swift */; };
 		A1558DBA26E3884B00CEE764 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DB926E3884B00CEE764 /* SceneDelegate.swift */; };
-		A1558DBC26E3884B00CEE764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DBB26E3884B00CEE764 /* ViewController.swift */; };
+		A1558DBC26E3884B00CEE764 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1558DBB26E3884B00CEE764 /* SignUpVC.swift */; };
 		A1558DBF26E3884B00CEE764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1558DBD26E3884B00CEE764 /* Main.storyboard */; };
 		A1558DC126E3885200CEE764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1558DC026E3885200CEE764 /* Assets.xcassets */; };
 		A1558DC426E3885200CEE764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1558DC226E3885200CEE764 /* LaunchScreen.storyboard */; };
@@ -18,10 +19,11 @@
 
 /* Begin PBXFileReference section */
 		6DFE3C6F64B3836055B2F913 /* Pods-20-Parse Foursquare Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-20-Parse Foursquare Clone.debug.xcconfig"; path = "Target Support Files/Pods-20-Parse Foursquare Clone/Pods-20-Parse Foursquare Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		A1086F2426E4E35100AF8335 /* Places VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Places VC.swift"; sourceTree = "<group>"; };
 		A1558DB426E3884B00CEE764 /* 20-Parse Foursquare Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20-Parse Foursquare Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1558DB726E3884B00CEE764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1558DB926E3884B00CEE764 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1558DBB26E3884B00CEE764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1558DBB26E3884B00CEE764 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		A1558DBE26E3884B00CEE764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1558DC026E3885200CEE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1558DC326E3885200CEE764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				6DFE3C6F64B3836055B2F913 /* Pods-20-Parse Foursquare Clone.debug.xcconfig */,
 				D615EC4C67A74ED31D512626 /* Pods-20-Parse Foursquare Clone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,7 +76,8 @@
 			children = (
 				A1558DB726E3884B00CEE764 /* AppDelegate.swift */,
 				A1558DB926E3884B00CEE764 /* SceneDelegate.swift */,
-				A1558DBB26E3884B00CEE764 /* ViewController.swift */,
+				A1558DBB26E3884B00CEE764 /* SignUpVC.swift */,
+				A1086F2426E4E35100AF8335 /* Places VC.swift */,
 				A1558DBD26E3884B00CEE764 /* Main.storyboard */,
 				A1558DC026E3885200CEE764 /* Assets.xcassets */,
 				A1558DC226E3885200CEE764 /* LaunchScreen.storyboard */,
@@ -206,9 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1558DBC26E3884B00CEE764 /* ViewController.swift in Sources */,
+				A1558DBC26E3884B00CEE764 /* SignUpVC.swift in Sources */,
 				A1558DB826E3884B00CEE764 /* AppDelegate.swift in Sources */,
 				A1558DBA26E3884B00CEE764 /* SceneDelegate.swift in Sources */,
+				A1086F2526E4E35100AF8335 /* Places VC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

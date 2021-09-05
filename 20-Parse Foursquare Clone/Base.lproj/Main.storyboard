@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign UpVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_0_Parse_Foursquare_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignUpVC" customModule="_0_Parse_Foursquare_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,28 +50,80 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="trailing" secondItem="54q-D2-llh" secondAttribute="trailing" id="1eL-Ze-r5M"/>
-                            <constraint firstItem="54q-D2-llh" firstAttribute="top" secondItem="BQ0-T3-mHt" secondAttribute="bottom" constant="8" id="6cN-yK-ggv"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xIN-HY-LjD" secondAttribute="trailing" constant="16" id="BN3-lg-Dib"/>
-                            <constraint firstItem="rIc-tv-zSe" firstAttribute="centerX" secondItem="BQ0-T3-mHt" secondAttribute="centerX" id="E4I-MK-mTJ"/>
-                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="leading" secondItem="54q-D2-llh" secondAttribute="leading" id="Iti-0y-QqX"/>
-                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="top" secondItem="rIc-tv-zSe" secondAttribute="bottom" constant="37" id="MpW-CO-xDm"/>
-                            <constraint firstItem="rIc-tv-zSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Xe4-W0-mHo"/>
-                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="XnQ-Ga-OqK"/>
-                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XyK-7w-wzK"/>
-                            <constraint firstItem="TMm-F1-tqu" firstAttribute="top" secondItem="54q-D2-llh" secondAttribute="bottom" constant="47" id="gJA-cO-M07"/>
-                            <constraint firstItem="54q-D2-llh" firstAttribute="leading" secondItem="TMm-F1-tqu" secondAttribute="leading" id="t8z-KB-FbX"/>
-                            <constraint firstItem="TMm-F1-tqu" firstAttribute="baseline" secondItem="xIN-HY-LjD" secondAttribute="baseline" id="uMN-7H-rcm"/>
+                            <constraint firstItem="rIc-tv-zSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3mb-Xq-5ha"/>
+                            <constraint firstItem="54q-D2-llh" firstAttribute="leading" secondItem="TMm-F1-tqu" secondAttribute="leading" id="5gy-Xi-bKx"/>
+                            <constraint firstItem="rIc-tv-zSe" firstAttribute="centerX" secondItem="BQ0-T3-mHt" secondAttribute="centerX" id="F0F-PS-Ifr"/>
+                            <constraint firstItem="54q-D2-llh" firstAttribute="top" secondItem="BQ0-T3-mHt" secondAttribute="bottom" constant="8" id="J4J-c0-2JK"/>
+                            <constraint firstItem="TMm-F1-tqu" firstAttribute="baseline" secondItem="xIN-HY-LjD" secondAttribute="baseline" id="JrR-wo-uc3"/>
+                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="trailing" secondItem="54q-D2-llh" secondAttribute="trailing" id="ME0-1Y-5nX"/>
+                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="MlF-HJ-kAc"/>
+                            <constraint firstItem="TMm-F1-tqu" firstAttribute="top" secondItem="54q-D2-llh" secondAttribute="bottom" constant="47" id="TuT-68-k5w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xIN-HY-LjD" secondAttribute="trailing" constant="16" id="bIp-2M-Nca"/>
+                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="leading" secondItem="54q-D2-llh" secondAttribute="leading" id="bTd-Cf-sRX"/>
+                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="sSm-wT-RYm"/>
+                            <constraint firstItem="BQ0-T3-mHt" firstAttribute="top" secondItem="rIc-tv-zSe" secondAttribute="bottom" constant="37" id="uyY-2J-V6c"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="wYB-ge-LhV"/>
                     <connections>
                         <outlet property="passwordText" destination="54q-D2-llh" id="Zif-BY-SQi"/>
                         <outlet property="usernameText" destination="BQ0-T3-mHt" id="jFK-6B-pZN"/>
+                        <segue destination="6Gy-yS-I1T" kind="presentation" identifier="toPlacesVC" modalPresentationStyle="fullScreen" id="Mis-e3-Btw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="71.651785714285708"/>
+            <point key="canvasLocation" x="1042.0289855072465" y="71.651785714285708"/>
+        </scene>
+        <!--Places VC-->
+        <scene sceneID="JNB-A2-sqo">
+            <objects>
+                <viewController title="Places VC" id="cmu-bp-0rb" customClass="Places_VC" customModule="_0_Parse_Foursquare_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7aV-Mf-2gd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Jiv-D8-fb6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZVF-2f-7eb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZVF-2f-7eb" firstAttribute="trailing" secondItem="Jiv-D8-fb6" secondAttribute="trailing" id="1j6-yG-wHn"/>
+                            <constraint firstItem="ZVF-2f-7eb" firstAttribute="bottom" secondItem="Jiv-D8-fb6" secondAttribute="bottom" id="9Hy-uG-vWT"/>
+                            <constraint firstItem="Jiv-D8-fb6" firstAttribute="top" secondItem="ZVF-2f-7eb" secondAttribute="top" id="IGi-JU-vba"/>
+                            <constraint firstItem="Jiv-D8-fb6" firstAttribute="leading" secondItem="ZVF-2f-7eb" secondAttribute="leading" id="tzq-Df-9Zy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J50-t4-F5a"/>
+                    <connections>
+                        <outlet property="tableView" destination="Jiv-D8-fb6" id="X4A-nG-22W"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toSignUpVC" modalPresentationStyle="fullScreen" id="yIY-Aj-GoS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UH1-B3-BEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2942" y="72"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fVa-XX-w0m">
+            <objects>
+                <navigationController storyboardIdentifier="NavigationController" automaticallyAdjustsScrollViewInsets="NO" id="6Gy-yS-I1T" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qhL-IQ-XFc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cmu-bp-0rb" kind="relationship" relationship="rootViewController" id="MhV-CB-AE8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lNM-Om-VgR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="72"/>
         </scene>
     </scenes>
     <resources>
